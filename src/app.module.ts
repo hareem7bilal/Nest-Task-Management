@@ -14,7 +14,8 @@ import { Student } from './student/student.entity';
       url: 'mongodb://localhost/school',
       synchronize: true,
       //useUnifiedTopology: true,
-      entities: [Lesson, Student]
+      entities: [Lesson, Student],
+      logging: true,
     }),
     GraphQLModule.forRoot({
       autoSchemaFile: true,
